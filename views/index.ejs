@@ -9,41 +9,52 @@
     <div class="container">
       <header>
         <!-- include .partials/header.ejs -->
-        <h1>Fundamental Human Movements</h1>
+        <h1>Fundamental Human Movements Training</h1>
+        <!-- banner image -->
       </header>
+
+      <!-- main for the cards -->
       <main>
         <% for (let i = 0; i < movements.length; i++) { %>
 
-
+        <!-- card div for each movement  -->
         <div class="card">
+
           <div class="name">
             <!-- name of movement -->
-            <%=movements[i].name %>
+            Name: <%=movements[i].name %>
+          </div> </br>
 
-          </div>
           <div class="image">
             <!-- image -->
-            <%=movements[i].image %>
-          </div>
+            Image: <%=movements[i].image %>
+          </div> </br>
 
           <div class="example">
             <!-- example movement -->
-            <%=movements[i].example %>
-          </div>
+            Example: <%=movements[i].example %>
+          </div> </br>
           <% } %>
+
           <div class="info-button">
-            <!-- Info button here  -->
+            <!-- Info button here to show route -->
           </div>
+
           <div class="delete-button">
             <!-- Delete form here  -->
           </div>
+        <!-- end of card div -->
         </div>
-        <div class="add-button">
-          <!-- Add Movement button here -->
-        </div>
+
+        <nav>
+          <!-- create new movement here  -->
+        </nav>
       </main>
+
       <footer>
         <!-- include ./partials/footer.ejs -->
+        <!-- contact -->
+        <!-- About -->
 
       </footer>
       <!-- end of container div -->

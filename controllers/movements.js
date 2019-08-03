@@ -4,7 +4,7 @@ const router = express.Router()
 const Movement = require('../models/movements.js')
 
 // ROUTES
-// Seed Route - just use once to seed data 
+// Seed Route - just use once to seed data
 router.get('/seed', (req, res) => {
     Movement.create(
       [
