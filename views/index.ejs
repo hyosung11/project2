@@ -12,9 +12,13 @@
         <h1>Fundamental Human Movements</h1>
       </header>
       <main>
+        <% for (let i = 0; i < movements.length; i++) { %>
+
+        <% } %>
         <div class="card">
           <div class="name">
             <!-- name of movement -->
+            <%=movements[i].name %>
           </div>
           <div class="image">
             <!-- image -->
@@ -26,15 +30,16 @@
             <!-- Info button here  -->
           </div>
           <div class="delete-button">
-            <!-- Delete Button here  -->
+            <!-- Delete form here  -->
           </div>
+        </div>
+        <div class="add-button">
+          <!-- Add Movement button here -->
         </div>
       </main>
       <footer>
         <!-- include ./partials/footer.ejs -->
-        <div class="add-button">
-          <!-- Add Movement button here -->
-        </div>
+
       </footer>
       <!-- end of container div -->
     </div>

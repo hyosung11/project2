@@ -46,6 +46,7 @@ router.get('/', (req, res) => {
     })
   })
 })
+
 // 2. New/GET Route
 
 // 3. Create/POST Route
