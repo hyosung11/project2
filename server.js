@@ -1,9 +1,8 @@
 // DEPENDENCIES
-const app = express()
-const db = mongoose.connection
 const express = require('express')
 const mongoose = require ('mongoose')
-
+const app = express()
+const db = mongoose.connection
 // MIDDLEWARE
 // include the method-override package
 const methodOverride  = require('method-override')
@@ -44,7 +43,7 @@ db.on('connected', () => console.log('mongo connected: ', MONGODB_URI))
 db.on('disconnected', () => console.log('mongo disconnected'))
 
 
-// ROUTES => controllers 
+// ROUTES => controllers
 //localhost:3000
 app.get('/' , (req, res) => {
   res.send('luminous minds working together')
