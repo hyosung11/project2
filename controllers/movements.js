@@ -33,14 +33,31 @@ router.get('/seed', (req, res)=>{
             example: 'goblet squat'
         }
     ], (error, data) => {
-        res.redirect('/movements');
+        res.redirect('/movements')
     })
 })
 
 
-// 1. Index Route
+// 1. Index/GET Route
+router.get('/', (req, res) => {
+  Movement.find({}, (error, allMovements) => {
+    res.render('index.ejs', {
+      movements: allMovements
+    })
+  })
+})
+// 2. New/GET Route
 
-// 2.
+// 3. Create/POST Route
+
+// 4. Show/GET Route
+
+// 5. Edit/GET Route
+
+
+// 6. Update/PUT Route
+
+// 7. Destroy/DELETE Route
 
 
 module.exports = router

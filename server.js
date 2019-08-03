@@ -46,7 +46,7 @@ db.on('disconnected', () => console.log('mongo disconnected'))
 // ROUTES => controllers
 //localhost:3000
 app.get('/' , (req, res) => {
-  res.send('luminous minds working together')
+  res.send('luminous minds working together on desirable difficulties')
 });
 
 // LISTENER
