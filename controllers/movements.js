@@ -9,4 +9,7 @@ const Movement = require('../models/movements.js')
 
 // 1. Index Route
 
-// 2. 
+// 2.
+
+
+module.exports = router 
