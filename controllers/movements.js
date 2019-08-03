@@ -53,6 +53,13 @@ router.get('/', (req, res) => {
 // 3. Create/POST Route
 
 // 4. Show/GET Route
+router.get('/:id', (req, res) => {
+  Movement.findById(req.params.id, (error, foundMovement) => {
+    res.render('show.ejs', {
+      movement: foundMovement
+    })
+  })
+})
 
 // 5. Edit/GET Route
 

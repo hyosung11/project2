@@ -34,15 +34,21 @@
             <!-- example movement -->
             Example: <%=movements[i].example %>
           </div> </br>
-          <% } %>
+
 
           <div class="info-button">
-            <!-- Info button here to show route -->
-          </div>
+            <!-- link to show page for each movement -->
+            <form action="/movements/<%=movements[i].id %>">
+              <input type="submit" name="" value="Info">
+            </form>
+          </div> </br>
 
+        <% } %>
           <div class="delete-button">
             <!-- Delete form here  -->
+            Delete
           </div>
+
         <!-- end of card div -->
         </div>
 
