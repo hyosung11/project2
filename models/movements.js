@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const movementSchema = new mongoose.Schema ({
   name: { type: String, required: true },
   image: String,
-  description: String,
+  Info: String,
   example: String
 })
 
