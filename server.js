@@ -2,11 +2,11 @@
 //___________________
 //Dependencies
 // ___________________
-const express = require('express');
-const methodOverride  = require('method-override');
-const mongoose = require ('mongoose');
-const app = express ();
-const db = mongoose.connection;
+const express = require('express')
+const methodOverride  = require('method-override')
+const mongoose = require ('mongoose')
+const app = express ()
+const db = mongoose.connection
 //___________________
 //Port
 //___________________
@@ -51,7 +51,7 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 //___________________
 //localhost:3000
 app.get('/' , (req, res) => {
-  res.send('luminous mind');
+  res.send('luminous - mind');
 });
 
 //___________________
