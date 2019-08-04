@@ -32,13 +32,14 @@ a {
   overflow: auto;
   box-sizing: border-box;
   margin: 0 auto;
+  /* background-color: pink; */
 }
 
 /* main, header, footer */
 main, article, header, footer {
   width: 100%;
   margin: 0 auto;
-  padding: 1em 3em;
+  padding: 1em 1em;
   box-sizing: border-box;
   background: rgba(245, 245, 245, 0.5);
   border-radius: .5em;
@@ -58,18 +59,16 @@ header h1 {
   text-align: center;
 }
 
-banner {
-
+section {
+  /* background-color: blue; */
 }
 
-.main {
-  margin: 0 auto;
-}
+
 
 /* cards */
 .card {
   width: 45%;
-  height: 200px;
+  height: 400px;
   /* display: flex; */
   /* justify-content: space-between; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
@@ -96,4 +95,10 @@ banner {
   justify-content: space-around;
   flex-flow: wrap;
   width: 800px;
+  margin: 0 auto;
+}
+
+.movement-images {
+  height: 400px;
+  width: 250px;
 }
