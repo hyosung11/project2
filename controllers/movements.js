@@ -37,6 +37,10 @@ router.get('/seed', (req, res) => {
     })
 })
 
+// 2. New/GET Route
+router.get('/new', (req, res) => {
+  res.render('new.ejs')
+})
 
 // 1. Index/GET Route
 router.get('/', (req, res) => {
@@ -48,7 +52,6 @@ router.get('/', (req, res) => {
   })
 })
 
-// 2. New/GET Route
 
 // 3. Create/POST Route
 
