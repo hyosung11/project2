@@ -9,22 +9,29 @@
     <div class="container">
       <header>
         <!-- same header for each page - partials -->
-        <h1>Movement Details</h1>
+        <h1>Fundamental Human Movements for Kids</h1>
+
+
       </header>
 
       <!-- Main  -->
       <main>
+        <h2>Movement Details</h2>
         <!-- name -->
         <div class="name">
           Name: <%=movements.name %>
         </div> </br>
         <!-- image -->
         <div class="image">
-          <%=movements.image%>
+          Image: <%=movements.image%>
         </div> </br>
         <!-- info -->
         <div class="info">
           Info: <%=movements.info %>
+        </div> </br>
+        <!-- examples -->
+        <div class="examples">
+          More Examples:
         </div> </br>
         <!-- edit button -->
         <div class="edit-button">
@@ -33,7 +40,7 @@
           </form>
         </div> </br>
         <!-- back to index page -->
-        <div class="return-button">
+        <div class="back-button">
           <form action="/movements">
             <input type="submit" name="return" value="Back to Movements">
           </form>
