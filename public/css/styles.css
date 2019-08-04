@@ -98,7 +98,12 @@ section {
   margin: 0 auto;
 }
 
+/* Index Page Images */
 .movement-images {
-  height: 400px;
-  width: 250px;
+  /* height: 400px; */
+  width: 50%;
+}
+/* More Info/Show Page Image */
+.movement-show {
+  width: 60%;
 }

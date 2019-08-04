@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Show</title>
   </head>
   <body>
@@ -10,10 +12,7 @@
       <header>
         <!-- same header for each page - partials -->
         <h1>Fundamental Human Movements for Kids</h1>
-
-
       </header>
-
       <!-- Main  -->
       <main>
         <h2>Movement Details</h2>
@@ -23,7 +22,8 @@
         </div> </br>
         <!-- image -->
         <div class="image">
-          Image: <%=movements.image%>
+          <img src="<%=movements.image%>" alt="movement" class="movement-show">
+          Image:
         </div> </br>
         <!-- info -->
         <div class="info">
@@ -31,7 +31,7 @@
         </div> </br>
         <!-- examples -->
         <div class="examples">
-          More Examples:
+          More Examples: <%=movements.moreExamples %>
         </div> </br>
         <!-- edit button -->
         <div class="edit-button">
@@ -46,11 +46,11 @@
           </form>
         </div>
       </main>
+      <!-- footer -->
+      <footer>
+
+      </footer>
     <!-- container end  -->
     </div>
-    <footer>
-    <!-- footer -->
-    </footer>
-
   </body>
 </html>
