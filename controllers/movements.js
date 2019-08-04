@@ -48,7 +48,7 @@ router.get('/:id/edit', (req, res) => {
     res.render(
       'edit.ejs',
       {
-          movements: foundmovement
+          movements: foundMovement
       }
     )
   })
@@ -66,6 +66,11 @@ router.get('/', (req, res) => {
 
 
 // 3. Create/POST Route
+router.post('/', (req, res) => {
+  Movement.create(req.body, (error, createdMovement) => {
+    res.redirect('/movements')
+  })
+})
 
 // 4. Show/GET Route
 router.get('/:id', (req, res) => {
@@ -76,12 +81,18 @@ router.get('/:id', (req, res) => {
   })
 })
 
-
-
-
 // 6. Update/PUT Route
+router.put('/:id', (req, res) => {
+  Movement.findByIdAndUpdate(req.params.id, req.body, {new: true}, (error, updatedModel) => {
+    res.redirect('/fruits')
+  })
+})
 
 // 7. Destroy/DELETE Route
-
+router.delete('/:id', (req, res) => {
+  Movement.findByIdAndRemove(req.params.id, (error, deletedMovement) => {
+    res.redirect('/movements')
+  })
+})
 
 module.exports = router
