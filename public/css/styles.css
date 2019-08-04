@@ -1,11 +1,99 @@
 /* General */
-body {
-  /* background-image: url('https://imgur.com/9UqKJOz.png'); */
-  background-image: url(../../images/background.png);
+* {
+  border: 1px solid gold;
+}
 
+body {
+  background-image: url(../../images/background.png);
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', helvetica;
+  /* font-family: 'Montserrat', helvetica; */
+}
+
+/* anchor link */
+a {
+  text-decoration: none;
+}
+
+/* Containers */
+/* .container {
+  background-color: pink;
+} */
+.container {
+  background: rgba(245, 245, 245, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding: 5em;
+  overflow: auto;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* main, header, footer */
+main, article, header, footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 3em;
+  box-sizing: border-box;
+  background: rgba(245, 245, 245, 0.5);
+  border-radius: .5em;
+  text-align: center;
+  /* box-shadow: 1px 1px 5px #888; */
+  /* display: flex; */
+  justify-content: space-between;
+}
+
+/* header */
+header {
+  margin-bottom: .25em;
+}
+
+header h1 {
+  color: #500c4a;
+  text-align: center;
+}
+
+banner {
+
+}
+
+.main {
+  margin: 0 auto;
+}
+
+/* cards */
+.card {
+  width: 45%;
+  height: 200px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  /* text-align: center; */
+  background-color: #f1f1f1;
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.column {
+  diplay: flex;
+  flex-flow: column;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  width: 800px;
 }

@@ -13,57 +13,79 @@
         <h1>Fundamental Human Movements for Kids</h1>
         <!-- banner image -->
       </header>
-      <!-- main for the cards -->
+      <!-- main for banner, article of cards, buttons cards -->
       <main>
+        <banner>
         <h2>Welcome</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <nav>
           <!-- add new movement button -->
           <a href="/movements/new">Add New Movement</a>
         </nav> </br>
+        </banner>
+        <article class="">
+          <div class="main">
+
 
         <% for (let i = 0; i < movements.length; i++) { %>
 
+
+
+
+
         <!-- card div for each movement  -->
         <div class="card">
-
+          <div class="row">
           <div class="name">
             <!-- name of movement -->
             Name: <%=movements[i].name %>
           </div> </br>
+          </div>
 
+          <div class="row">
           <div class="image">
             <!-- image -->
             Image: <%=movements[i].image %>
           </div> </br>
+          </div>
 
+          <div class="row">
           <div class="example">
             <!-- example movement -->
             Example: <%=movements[i].example %>
           </div> </br>
-
-
-          <div class="info-button">
-            <!-- link to show page for each movement -->
-            <form action="/movements/<%=movements[i].id %>">
-              <input type="submit" name="" value="More Info">
-            </form>
-          </div> </br>
-
-
-          <!-- Delete form here? -->
-          <div class="delete-button">
-            <form action="/movements/<%=movements[i].id %>?_method=DELETE" method="POST">
-              <input type="submit" value="DELETE"/>
-             </form>
           </div>
+
+          <div class="row">
+            <div class="info-button">
+              <!-- link to show page for each movement -->
+              <form action="/movements/<%=movements[i].id %>">
+                <input type="submit" name="" value="More Info">
+              </form>
+            </div> </br>
+
+
+            <!-- Delete form here? -->
+            <div class="delete-button">
+              <form action="/movements/<%=movements[i].id %>?_method=DELETE" method="POST">
+                <input type="submit" value="DELETE"/>
+               </form>
+            </div>
+          </div>
+
+          </div>
+          
 
           <% } %>
         <!-- end of card div -->
+
+        </div>
+        </article>
       </div> </br>
 
       </main>
 
+      <!-- footer -->
       <footer>
         <!-- include ./partials/footer.ejs -->
         <!-- contact -->
