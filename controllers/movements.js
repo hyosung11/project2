@@ -42,6 +42,18 @@ router.get('/new', (req, res) => {
   res.render('new.ejs')
 })
 
+// 5. Edit/GET Route
+router.get('/:id/edit', (req, res) => {
+  Movement.findById(req.params.id, (error, foundMovement) => {
+    res.render(
+      'edit.ejs',
+      {
+          movements: foundmovement
+      }
+    )
+  })
+})
+
 // 1. Index/GET Route
 router.get('/', (req, res) => {
   Movement.find({}, (error, allMovements) => {
@@ -59,12 +71,12 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   Movement.findById(req.params.id, (error, foundMovement) => {
     res.render('show.ejs', {
-      movement: foundMovement
+      movements: foundMovement
     })
   })
 })
 
-// 5. Edit/GET Route
+
 
 
 // 6. Update/PUT Route

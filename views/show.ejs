@@ -16,19 +16,19 @@
       <main>
         <!-- name -->
         <div class="name">
-          Name: <%=movement.name %>
+          Name: <%=movements.name %>
         </div> </br>
         <!-- image -->
         <div class="image">
-          <%=movement.image%>
+          <%=movements.image%>
         </div> </br>
         <!-- info -->
         <div class="info">
-          Info: <%=movement.info %>
+          Info: <%=movements.info %>
         </div> </br>
         <!-- edit button -->
         <div class="edit-button">
-          <form action="/movements/<%=movements[i].id %>">
+          <form action="/movements/<%=movements[i].id%>/edit">
             <input type="submit" name="edit" value="Edit">
           </form>
         </div> </br>
