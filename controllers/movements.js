@@ -64,7 +64,6 @@ router.get('/', (req, res) => {
   })
 })
 
-
 // 3. Create/POST Route
 router.post('/', (req, res) => {
   Movement.create(req.body, (error, createdMovement) => {
