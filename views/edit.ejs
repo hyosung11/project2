@@ -2,32 +2,70 @@
 <html lang="en" dir="ltr">
   <head>
     <!-- partials -->
-    <!-- stylesheets -->
+    <!-- styles -->
     <link rel="stylesheet" href="/css/styles.css">
+    <!-- fonts -->
     <meta charset="utf-8">
     <title>Edit</title>
   </head>
   <body>
+    <!-- container -->
     <div class="container">
       <!-- header -->
       <header>
         <!-- partials -->
         <h1>Fundamental Human Movements for Kids</h1>
       </header>
-
-      <!-- main -->
-      <main>
+      <!-- Section Container -->
+      <section>
         <h2>Edit Movement</h2>
-
         <!-- back to index page -->
         <div class="return-button">
           <form action="/movements">
             <input type="submit" name="return" value="Back to Movements">
           </form>
         </div>
+      </section>
+      <main>
+        <!-- Start Form -->
+        <form action="/movements" method="POST">
+          <!-- fieldset for account info -->
+          <fieldset class="account-info">
+            <!-- legend for account info -->
+            <!-- <legend>ACCOUNT INFORMATION</legend> -->
+              <!-- movement -->
+              <label for="movement-name">Movement Name</label>
+              <input type="text" id="movement-name"/>
+              <!-- image link -->
+              <label for="image-link">Image Link</label>
+              <input type="text" id="image-link">
+              <!-- more info -->
+              <!-- biography -->
+              <label for="more-info">More Info</label>
+              <!-- textarea for larger bodies of text -->
+              <textarea id="more-info" placeholder="write here"></textarea>
+              <!-- <label for="more-info">More Info</label>
+              <input type="text" id="more-info"/> -->
+              <!-- examples -->
+              <label for="examples">Examples</label>
+              <input type="text" id="examples"/>
 
+          </fieldset>
+          <!-- fieldset for profile info -->
+          <fieldset class="profile-info">
+            <!-- legend for profile info -->
+            <!-- <legend>PROFILE INFORMATION</legend> -->
+              <!-- biography -->
+              <!-- <label for="biography">BIOGRAPHY</label>
+              <!-- textarea for larger bodies of text -->
+              <!-- <textarea id="biography" placeholder="write here"></textarea> -->
+          </fieldset>
+          <!-- submit button -->
+          <input type="submit" value="Submit Form">
+        </form>
 
       </main>
+
 
       <!-- footer -->
       <footer>
@@ -35,8 +73,7 @@
       </footer>
 
 
-
+    <!-- container div end  -->
     </div>
-
   </body>
 </html>
