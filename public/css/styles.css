@@ -34,8 +34,8 @@ a {
 
 
 /* ==== INDEX PAGE ==== */
-/* main, header, footer */
-main, article, header, footer {
+/* main, header, footer? */
+main, article, header {
   width: 100%;
   margin: 0 auto;
   padding: 1em 1em;
@@ -50,7 +50,7 @@ main, article, header, footer {
 
 /* header */
 header {
-  margin-bottom: .25em;
+  margin-bottom: .05em;
 }
 
 h1 {
@@ -63,10 +63,11 @@ h1 {
 
 section {
   padding: 10px;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 h2 {
+  color: #500c4a;
   font-size: 2.5em;
 }
 
