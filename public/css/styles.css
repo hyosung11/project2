@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Baufra';
+  opacity: 1.0;
 }
 
 /* anchor link */
@@ -19,7 +20,7 @@ a {
 
 /* Containers */
 .container {
-  background: rgba(191, 63, 174, 0.1);
+  background: rgba(191, 63, 174, 0.05);
   width: 100%;
   height: 100%;
   top: 0;
@@ -29,19 +30,20 @@ a {
   overflow: auto;
   box-sizing: border-box;
   margin: 0 auto;
-  /* background-color: pink; */
 }
 
+
+/* ==== INDEX PAGE ==== */
 /* main, header, footer */
 main, article, header, footer {
   width: 100%;
   margin: 0 auto;
   padding: 1em 1em;
   box-sizing: border-box;
-  background: rgba(245, 245, 245, 0.5);
+  background: rgba(245, 245, 245, 0.85);
   border-radius: .5em;
   text-align: center;
-  /* box-shadow: 1px 1px 5px #888; */
+  box-shadow: 1px 1px 5px #888;
   /* display: flex; */
   justify-content: space-between;
 }
@@ -51,20 +53,32 @@ header {
   margin-bottom: .25em;
 }
 
-header h1 {
+h1 {
   color: #500c4a;
+  font-size: 3em;
+  font-weight: bold;
   text-align: center;
   font-family: 'Baufra';
 }
 
 section {
   padding: 10px;
-  /* background-color: blue; */
+  background-color: blue;
+}
+
+h2 {
+  font-size: 2.5em;
 }
 
 p {
   padding: 2% 10%;
   text-align: justify;
+  font-size: 1.5em;
+}
+
+nav {
+  padding: 2% 10%;
+  font-size: 1.5em;
 }
 
 .main {
@@ -84,7 +98,7 @@ p {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */ */
   padding: 16px;
   /* text-align: center; */
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
   margin-bottom: 2%;
 }
 
@@ -100,6 +114,13 @@ p {
   flex-flow: column;
 }
 
+/* name of movement */
+.name {
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+  padding: 1em;
+}
 
 /* Index Page Images */
 .movement-images {
@@ -107,6 +128,17 @@ p {
   width: 100%;
   align: center;
 }
+
+/* example div */
+.example {
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+  padding: 1em;
+}
+
+/* =========================== */
+/* SHOW PAGE */
 /* More Info/Show Page Image */
 .movement-show {
   width: 60%;

@@ -35,7 +35,7 @@
               <div class="row">
                 <div class="name">
                   <!-- name of movement -->
-                  Name: <%=movements[i].name %>
+                  <%=movements[i].name %>
               </div> </br>
             </div>
               <!-- for image  -->
@@ -54,14 +54,14 @@
               </div>
               <!-- for more info button -->
               <div class="row">
-                <div class="info-button">
+                <div class="button">
                   <!-- link to show page for each movement -->
                   <form action="/movements/<%=movements[i].id %>">
                     <input type="submit" name="" value="More Info">
                   </form>
               </div>
             <!-- Delete form here -->
-              <div class="delete-button">
+              <div class="button">
                 <!-- link to delete route -->
                 <form action="/movements/<%=movements[i].id %>?_method=DELETE" method="POST">
                   <input type="submit" value="DELETE"/>
