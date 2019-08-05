@@ -1,6 +1,6 @@
 /* General */
 * {
-  border: 1px solid gold;
+  border: 1px solid red;
 }
 
 body {
@@ -91,6 +91,7 @@ nav {
 
 /* cards */
 .card {
+  background: green;
   width: 46%;
   /* height: 400px; */
   /* display: flex; */
@@ -140,6 +141,14 @@ nav {
 /* =========================== */
 /* SHOW PAGE */
 /* More Info/Show Page Image */
+.name-show {
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+  padding: 1em;
+}
+
+
 .movement-show {
   width: 60%;
 }
