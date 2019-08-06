@@ -21,7 +21,7 @@
         <h2>Edit Movement</h2>
         <!-- back to index page -->
         <div class="return-button">
-          <form action="/movements">
+          <form action="/movements/<%movement.id%>?_method=PUT" method="POST">
             <input type="submit" name="return" value="Back to Movements">
           </form>
         </div>
