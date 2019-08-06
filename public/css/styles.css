@@ -35,12 +35,12 @@ a {
 
 /* ==== INDEX PAGE ==== */
 /* main, header, footer? */
-main, article, header {
+main, article, header, .main, .card {
   width: 100%;
   margin: 0 auto;
   padding: 1em 1em;
   box-sizing: border-box;
-  background: rgba(245, 245, 245, 0.85);
+  background: rgba(250, 250, 250, 0.8);
   border-radius: .5em;
   text-align: center;
   box-shadow: 1px 1px 5px #888;
@@ -50,7 +50,7 @@ main, article, header {
 
 /* header */
 header {
-  margin-bottom: .05em;
+  /* margin-bottom: .05em; */
 }
 
 h1 {
@@ -88,12 +88,14 @@ nav {
   flex-flow: wrap;
   width: 100%;
   margin: 0 auto;
+  /* background: rgba(250, 250, 250, 0.8); */
 }
 
 /* cards */
 .card {
-  background: green;
-  width: 46%;
+  /* background: green; */
+  width: 47%;
+  /* background: rgba(250, 250, 250, 0.8); */
   /* height: 400px; */
   /* display: flex; */
   /* justify-content: space-between; */
@@ -118,10 +120,11 @@ nav {
 
 /* name of movement */
 .name {
-  font-size: 1.5em;
+  font-size: 1.75em;
   text-align: center;
   width: 100%;
   padding: 1em;
+  color: #500c4a;
 }
 
 /* Index Page Images */
@@ -148,7 +151,6 @@ nav {
   width: 100%;
   padding: 1em;
 }
-
 
 .movement-show {
   width: 60%;
