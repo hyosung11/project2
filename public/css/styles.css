@@ -1,6 +1,6 @@
 /* General */
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -9,8 +9,6 @@ body {
   background-repeat: repeat;
   margin: 0;
   padding: 0;
-  /* font-family: 'Baufra'; */
-  /* opacity: 1.0; */
 }
 
 /* anchor link */
@@ -20,7 +18,6 @@ a {
 
 /* Containers */
 .container {
-  /* background: rgba(191, 63, 174, 0.1); */
   background: rgba(250, 250, 250, 0.8);
   width: 100%;
   height: 100%;
@@ -38,7 +35,7 @@ a {
 header, section, main, .main, .card {
   width: 100%;
   margin: 0 auto;
-  padding: .5em .5em;
+  padding: .5em 1em;
   box-sizing: border-box;
   border-radius: .5em;
   text-align: center;
@@ -49,7 +46,7 @@ header, section, main, .main, .card {
 
 /* header */
 header {
-  /* margin-bottom: .05em; */
+  /* background: magenta; */
 }
 
 h1 {
@@ -72,38 +69,51 @@ h2 {
 
 p {
   color: #500c4a;
-  padding: 2% 10%;
+  padding: 1% 12%;
   text-align: justify;
   font-size: 1.5em;
-}
-
-form {
-  font-size: 1.5em;
-  color: #500c4a;
   margin: 0 auto;
 }
 
+form {
+  /* font-size: 1.5em;
+  color: #500c4a; */
+  margin-bottom: 2%;
+  padding: 2%;
+
+}
+
+input {
+  font-size: 1em;
+  color: #500c4a;
+  margin: 0 auto;
+  padding: 1%;
+  background: rgba(250, 250, 250, 0.8);
+  border-radius: .5em;
+  border: 1px solid grey;
+}
+
+h3 {
+  font-size: 2em;
+  text-align: center;
+  /* width: 100%; */
+  padding: 1em;
+  color: #500c4a;
+}
 .main {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
   width: 100%;
-  margin: 0 auto;
-  background: rgba(191, 63, 174, 0.5);
+  margin-top: .5%;
+  /* background: rgba(191, 63, 174, 0.5); */
+  padding: 1%;
 }
 
 /* cards */
 .card {
-  background: green;
   width: 47%;
-  /* background: rgba(250, 250, 250, 0.8); */
-  /* height: 400px; */
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */ */
   padding: 2%;
-  /* text-align: center; */
-  /* background-color: #f1f1f1; */
   margin-bottom: 2%;
 }
 
@@ -112,6 +122,8 @@ form {
   flex-flow: wrap;
   justify-content: space-around;
   width: 100%;
+  padding-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 .column {
@@ -124,7 +136,7 @@ form {
   font-size: 1.75em;
   text-align: center;
   width: 100%;
-  padding: 1em;
+  padding: .5em;
   color: #500c4a;
 }
 
@@ -133,6 +145,7 @@ form {
   /* height: 400px; */
   width: 100%;
   align: center;
+  border-radius: .5%;
 }
 
 /* example div */
@@ -141,18 +154,14 @@ form {
   text-align: center;
   width: 100%;
   padding: 1em;
+  color: #500c4a;
 }
 
 /* =========================== */
 /* SHOW PAGE */
 /* More Info/Show Page Image */
-.name-show {
-  font-size: 1.5em;
-  text-align: center;
-  width: 100%;
-  padding: 1em;
-}
+
 
 .movement-show {
-  width: 60%;
+  width: 80%;
 }
