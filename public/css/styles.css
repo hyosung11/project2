@@ -1,4 +1,4 @@
-/* General */
+/* ==== General ==== */
 * {
   /* border: 1px solid red; */
 }
@@ -158,11 +158,28 @@ h3 {
   padding: 1%;
   margin: 10px;
 } */
-/* =========================== */
-/* SHOW PAGE */
-/* More Info/Show Page Image */
 
+/* ==== SHOW PAGE ==== */
 
 .movement-show {
   width: 80%;
+  border-radius: .5em;
 }
+
+.info {
+  padding: 2% 12%;
+  text-align: justify;
+  font-size: 1.5em;
+  color: #500c4a;
+}
+
+.examples {
+  padding: 2% 12%;
+  text-align: justify;
+  font-size: 1.5em;
+  color: #500c4a;
+}
+
+/* put both buttons on the same row */
+
+/* ==== NEW PAGE ==== */
