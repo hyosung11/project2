@@ -87,7 +87,7 @@ router.get('/:id', (req, res) => {
 // 6. Update/PUT Route
 router.put('/:id', (req, res) => {
   Movement.findByIdAndUpdate(req.params.id, req.body, {new: true}, (error, updatedModel) => {
-    res.redirect('/fruits')
+    res.redirect('/movements')
   })
 })
 

@@ -35,19 +35,18 @@
             <!-- <legend>ACCOUNT INFORMATION</legend> -->
               <!-- movement -->
               <label for="movement-name">Movement Name</label>
-              <input type="text" id="movement-name" value=""/>
+              <input type="text" name="name" id="movement-name" value=""/>
               <!-- image link -->
               <label for="image-link">Image Link</label>
-              <input type="text" id="image-link" value="<%=movements.image%>"/>
+              <input type="text" name="image" id="image-link" value=""/>
               <!-- more info -->
               <label for="more-info">Info</label>
               <!-- textarea for larger bodies of text -->
-              <textarea id="more-info" placeholder="write here"></textarea>
-              <input type="text" id="more-info" value="<%=movements.info%>"/>
+              <!-- <textarea id="more-info" placeholder="write here"></textarea> -->
+              <input type="text" name="info" id="more-info" value=""/>
               <!-- examples -->
               <label for="examples">Examples</label>
-              <input type="text" id="examples" value="<%=movements.moreExamples%>"/>
-
+              <input type="text" name="moreExamples" id="examples" value=""/>
           <!-- </fieldset> -->
           <!-- fieldset for profile info -->
           <!-- <fieldset class="profile-info">
@@ -57,9 +56,9 @@
               <!-- <label for="biography">BIOGRAPHY</label>
               <!-- textarea for larger bodies of text -->
               <!-- <textarea id="biography" placeholder="write here"></textarea> -->
-          </fieldset>
+          <!-- </fieldset> -->
           <!-- submit button -->
-          <input type="submit" value="Submit Form">
+          <input type="submit" value="Submit" class="submit-button">
         </form>
 
       </main>

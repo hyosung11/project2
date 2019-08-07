@@ -183,3 +183,11 @@ h3 {
 /* put both buttons on the same row */
 
 /* ==== NEW PAGE ==== */
+.add-button {
+  margin: 5%;
+}
+
+/* ==== EDIT PAGE ==== */
+.submit-button {
+  margin: 5%;
+}
