@@ -12,28 +12,28 @@ router.get('/seed', (req, res) => {
             name: 'Pull',
             image: '/images/pullup.png',
             info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            example: 'pullup',
+            example: 'Pullup',
             moreExamples: 'renegade row, lat pulldown, seated cable rows'
         },
         {
             name: 'Push',
             image: '/images/pushup.png',
             info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            example: 'pushup',
+            example: 'Pushup',
             moreExamples: 'bench press, military press, one-arm press'
         },
         {
             name: 'Hinge',
             image: '/images/deadlift.png',
             info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            example: 'kettlebell deadlift',
+            example: 'Kettlebell Deadlift',
             moreExamples: 'kettlebell swing, barbell hip thrust, Romanian single leg deadlift'
         },
         {
             name: 'Squat',
             image: '/images/squat.png',
             info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            example: 'goblet squat',
+            example: 'Goblet Squat',
             moreExamples: 'safety bar box squat, single leg squat, sumo squat'
         }
     ], (error, data) => {
